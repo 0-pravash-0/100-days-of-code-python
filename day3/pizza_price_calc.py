@@ -21,7 +21,11 @@ elif size == "L":
 # todo: work out how much to add to their bill based on their pepperoni choice. 
 
 if pepperoni == "Y":
-    price += 3
+    if size == "S":
+        price += 2
+    else:
+        price +=3
+    
 
 # todo: work out their final amount based on whether if they want extra cheese.
 
